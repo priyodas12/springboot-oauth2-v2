@@ -5,12 +5,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 @RequestMapping("/api")
-public class UserController {
+public class AdminController {
 
-    @GetMapping("/user/{id}")
-    public String userPageController(@PathVariable String id){
-        return "Hey, this page is build for user id: "+id;
+    @GetMapping("/admin/{id}")
+    public String adminPageController(@PathVariable String id) {
+        return "Hey, this page is build for admin id: " + id;
     }
 }
