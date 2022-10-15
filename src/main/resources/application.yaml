@@ -1,0 +1,11 @@
+server:
+  port: 7200
+
+security:
+  oauth2:
+    client:
+      client-id: test-client-2
+      client-secret: test-secret-2
+      scope:
+        - read
+        - write
