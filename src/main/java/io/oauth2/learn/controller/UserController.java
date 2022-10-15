@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class UserController {
 
-    @GetMapping("/user/{id}")
-    public String userPageController(@PathVariable String id){
-        return "Hey, this page is build for user id: "+id;
+    @GetMapping("/user/{name}")
+    public String userPageController(@PathVariable String name){
+        return "Hey, this page is build for User: "+name;
     }
 }

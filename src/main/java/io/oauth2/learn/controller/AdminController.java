@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class AdminController {
 
-    @GetMapping("/admin/{id}")
-    public String adminPageController(@PathVariable String id) {
-        return "Hey, this page is build for admin id: " + id;
+    @GetMapping("/admin/{name}")
+    public String adminPageController(@PathVariable String name) {
+        return "Hey, this page is build for Admin : " + name;
     }
 }
