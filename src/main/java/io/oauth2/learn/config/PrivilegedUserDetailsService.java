@@ -7,6 +7,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import io.oauth2.learn.model.*;
+import org.springframework.stereotype.Service;
+
+@Service
 public class PrivilegedUserDetailsService implements UserDetailsService {
 
     @Autowired

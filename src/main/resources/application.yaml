@@ -1,6 +1,18 @@
 server:
   port: 7200
 
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oauth2db
+    username: 
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: org.hibernate.dialect.MySQL8Dialect
+
 security:
   oauth2:
     client:
@@ -9,3 +21,5 @@ security:
       scope:
         - read
         - write
+    resource:
+      id: test-resource-2
