@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class ProductManagerRole {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "r_id")
     private Long rId;
     private String roleNames;

@@ -33,7 +33,7 @@ public class Oauth2Application  implements CommandLineRunner {
 
 		System.out.println("command line runner...");
 
-		/*ProductManagerRole pr1=new ProductManagerRole();
+		ProductManagerRole pr1=new ProductManagerRole();
 		pr1.setRId(10L);
 		pr1.setRoleNames("ADMIN");
 
@@ -49,6 +49,6 @@ public class Oauth2Application  implements CommandLineRunner {
 		p1.setPassword(passwordEncoder.encode("priyo123"));
 		p1.setRoles(s1);
 
-		productManagerRepository.save(p1);*/
+		productManagerRepository.save(p1);
 	}
 }
