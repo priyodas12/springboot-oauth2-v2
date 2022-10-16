@@ -32,6 +32,10 @@ public class ProductManagerService implements UserDetailsService {
        return  productManagerRepository.save(productManager);
     }
 
+    public ProductManager fetchProductManagerInfo(Long pid){
+        return productManagerRepository.getOne(pid);
+    }
+
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
         log.info("loadUserByUsername....");
