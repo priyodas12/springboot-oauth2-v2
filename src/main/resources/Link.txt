@@ -1,0 +1,7 @@
+http://localhsot:7200/oauth2/authorize?
+response_type=code&
+client_id=client&
+scope=openid&
+redirect_uri=http://spring.io/auth&
+code_challenge=JbYY2pbjhqzrzGHbNpOJoSwSRcC96LgEMoPNGN21VQ4&
+code_challenge-method=S256

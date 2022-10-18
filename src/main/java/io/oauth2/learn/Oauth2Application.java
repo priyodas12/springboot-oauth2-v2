@@ -34,7 +34,7 @@ public class Oauth2Application  implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		System.out.println("command line runner...");
-
+/*
 		ProductManagerRole pr1=new ProductManagerRole();
 		pr1.setRId(10L);
 		pr1.setRoleNames("ADMIN");
@@ -52,6 +52,6 @@ public class Oauth2Application  implements CommandLineRunner {
 		p1.setRoles(s1);
 		p1.setProductOwner("PO_FURNITURE");
 
-		productManagerRepository.save(p1);
+		productManagerRepository.save(p1);*/
 	}
 }
