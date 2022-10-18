@@ -32,8 +32,8 @@ public class ProductManagerService implements UserDetailsService {
        return  productManagerRepository.save(productManager);
     }
 
-    public ProductManager fetchProductManagerInfo(Long pid){
-        return productManagerRepository.getOne(pid);
+    public ProductManager fetchProductManagerInfo(String userName){
+        return productManagerRepository.getProductManagerByUserName(userName);
     }
 
     @Override

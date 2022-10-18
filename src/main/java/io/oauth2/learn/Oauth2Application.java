@@ -12,6 +12,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -48,6 +50,7 @@ public class Oauth2Application  implements CommandLineRunner {
 		BCryptPasswordEncoder passwordEncoder=new BCryptPasswordEncoder(4);
 		p1.setPassword(passwordEncoder.encode("priyo123"));
 		p1.setRoles(s1);
+		p1.setProductOwner("PO_FURNITURE");
 
 		productManagerRepository.save(p1);
 	}

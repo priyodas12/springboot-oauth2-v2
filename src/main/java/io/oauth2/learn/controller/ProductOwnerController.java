@@ -21,12 +21,12 @@ public class ProductOwnerController {
     @Autowired
     private ProductManagerService productManagerService;
 
-    @GetMapping("/product/owner/{id}")
-    public ResponseEntity<List<String>> productOwnerInfo(@PathVariable Long pid){
+    @GetMapping("/product/owner/{userName}")
+    public ResponseEntity<String> productOwnerInfo(@PathVariable String userName){
 
         log.info("ProductOwnerController:productOwnerInfo() invoked");
 
-        ProductManager productManager=productManagerService.fetchProductManagerInfo(pid);
+        ProductManager productManager=productManagerService.fetchProductManagerInfo(userName);
 
         return new ResponseEntity<>(productManager.getProductOwner(), HttpStatus.OK);
     }

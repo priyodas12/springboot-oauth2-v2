@@ -18,7 +18,7 @@ public class ProductManager {
     private Long pId;
     private String userName;
     private String password;
-    private List<String> productOwner;
+    private String productOwner;
 
     @ManyToMany(fetch = FetchType.EAGER,cascade = {CascadeType.ALL})
     @JoinTable(name = "join_product_manager_role",joinColumns = {@JoinColumn(name="p_id")},inverseJoinColumns = {@JoinColumn(name="r_id")})
